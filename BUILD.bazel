@@ -1,0 +1,5 @@
+load("@bazel_gazelle//:def.bzl", "gazelle")
+load("@io_bazel_rules_go//proto:compiler.bzl", "go_proto_compiler")
+
+# gazelle:prefix example.com/example
+gazelle(name = "gazelle")

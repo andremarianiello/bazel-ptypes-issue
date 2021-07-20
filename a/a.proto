@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package example.a;
+
+option go_package = "example.com/example/a";
+
+service A {
+  rpc DoA(AMessage) returns (AMessage) {
+  }
+}
+
+message AMessage {
+}

@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package example.b;
+
+option go_package = "example.com/example/b";
+
+import "google/protobuf/timestamp.proto";
+import "a/a.proto";
+
+service B {
+  rpc DoB(BMessage) returns (BMessage) {
+  }
+}
+
+message BMessage {
+}
